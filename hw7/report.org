@@ -1,0 +1,73 @@
+#+TITLE: CSE 241 Homework 7
+
+#+SETUPFILE: /home/near/opt/template-nodate.org
+#+LATEX_HEADER: \documentclass[12pt]{report}
+
+* GUI Design
+  - =boardPanel= is Jpanel with =GridLayout=
+  - For identation empty =JLabel='s are used
+  - Each cell is a =JButton= with some cutomization 
+  
+  - To run:
+#+begin_src 
+javac *.java
+java Main
+#+end_src
+
+#+attr_latex: :width 300px
+#+ATTR_LATEX: :placement [H]
+#+caption: First run of the program
+[[file:GUI_Design/2021-01-29_14-49-20_screenshot.png]]
+
+
+#+attr_latex: :width 300px
+#+ATTR_LATEX: :placement [H]
+#+caption: Example 8x8 empty board
+[[file:GUI_Design/2021-01-29_14-57-47_screenshot.png]]
+ 
+#+attr_latex: :width 300px
+#+caption: Win situation with blue user. Path highlighted
+[[file:GUI_Design/2021-01-29_14-59-26_screenshot.png]]
+
+
+#+attr_org: :width 400px
+#+ATTR_LATEX: :placement [H]
+#+caption: Win situation with red user on 12x12 board.
+[[file:GUI_Design/2021-01-29_15-05-55_screenshot.png]]
+
+
+* File format
+Example 8x8 board, user vs user saved file:
+#+begin_src 
+boardSize:8
+vsComputer:false
+board:..........x.o....o..xo...x........o..ox...x.........o.x..xo.....
+nextTurn:x
+history.size:14
+history:1,3 5,2 2,5 4,1 2,1 1,2 4,2 2,4 6,4 4,6 6,6 2,7 1,7 5,4 
+#+end_src
+
+* User Input Validity
+  
+** Board size
+   I have chosen the maximum limit of board size is 20; since it started to look unreadble after that point.
+  
+ #+attr_org: :width 400px
+ [[file:User_Input_Validity/2021-01-29_14-50-22_screenshot.png]]
+ 
+** Load File
+   Empty input or file is not found in the directory:
+
+ #+attr_latex: :width 300px
+#+ATTR_LATEX: :placement [H]
+ [[file:User_Input_Validity/2021-01-29_14-55-39_screenshot.png]]
+ #+attr_latex: :width 300px
+#+ATTR_LATEX: :placement [H]
+ [[file:User_Input_Validity/2021-01-29_14-56-01_screenshot.png]]
+
+- After win, buttons become unclickable.
+
+* Notes
+
+- Undo after load works.
+- Undo after a win works.

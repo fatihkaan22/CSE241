@@ -1,0 +1,11 @@
+boardSize:12
+board:......o.....o.....o...........o.....o...........xxxx.xx.....o...................................................................................
+nextTurn:x
+vsComputer:1
+computerMemory.opponentPos.top:3
+computerMemory.opponentPos.array:0,4 1,4 2,4 
+computerMemory.computerLastMove.x:0
+computerMemory.computerLastMove.y:5
+computerMemory.nextMove.x:6
+computerMemory.nextMove.y:2
+computerMemory.status:1

@@ -1,0 +1,17 @@
+boardSize:12
+vsComputer:true
+board:......o.....................x....x.......x..............o.......x.x.o.....o.x.x.o....o......o....o.x..x......o..................................
+nextTurn:x
+history.size:18
+history:4,5 2,6 4,2 6,0 6,5 8,4 3,8 1,9 6,8 1,8 4,6 1,7 6,6 8,7 9,2 8,5 5,3 8,6 
+computerMemory.opponentPos.top:8
+computerMemory.opponentPos.array:4,5 4,2 6,5 3,8 4,6 6,8 9,2 6,6 
+computerMemory.computerLastMove.x:8
+computerMemory.computerLastMove.y:6
+computerMemory.nextMove.x:6
+computerMemory.nextMove.y:6
+computerMemory.status:attack
+computerLastMoveHistory.size:9
+computerLastMoveHistory:8,6 8,6 8,6 8,6 8,6 8,6 8,6 8,6 8,6 
+nextMoveHistory.size:9
+nextMoveHistory:6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 

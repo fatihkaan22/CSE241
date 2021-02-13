@@ -1,0 +1,4 @@
+boardSize:5
+board:.....x.......xo......o...
+nextTurn:x
+vsComputer:0
